@@ -1,0 +1,28 @@
+.header {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  height: 10vh;
+}
+
+.header p {
+  color: darkblue;
+}
+
+.main-container {
+  background-color: rgb(33, 91, 143);
+  padding: 20px;
+  border-radius: 10px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.footer {
+  background-color: rgb(224, 240, 255);
+  padding: 20px;
+  border-radius: 10px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  color: black;
+}
