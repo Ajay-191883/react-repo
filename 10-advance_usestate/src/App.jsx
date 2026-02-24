@@ -9,7 +9,16 @@ function App() {
 
   function updateValues() {
     // console.log(num);
-    setnum(20);
+
+    // Batch operation
+    // setnum(num + 1);
+    // setnum(num + 1);
+    // setnum(num + 1); // 13 NOT WORKING AS EXPECTED GETTING 11
+
+    setnum((prev) => prev + 1);
+    setnum((prev) => prev + 1);
+    setnum((prev) => prev + 1);
+
     // setuser({ name: "Ajay", age: 30 });
     // console.log(num);
 
@@ -24,11 +33,13 @@ function App() {
 
     // console.log(obj1, obj2);
 
-    const userNew = { ...user };
-    userNew.age = 100;
-    setuser(userNew);
+    // const userNew = { ...user };
+    // userNew.age = 100;
+    // setuser(userNew);
 
-    console.log(user, userNew);
+    setuser((prev) => ({ ...prev, age: 15, name: "Nandini", email: "jhgjh" }));
+
+    // console.log(user, userNew);
 
     let arrNew = [...arr];
     arrNew.push(4);
@@ -40,7 +51,7 @@ function App() {
   return (
     <div>
       NUM IS = {num} <br />
-      USER IS = {user.name}, {user.age}
+      USER IS = {user.name}, {user.age}, {user.email}
       <br />
       ARRAY IS = {arr}
       <br />
