@@ -23,7 +23,7 @@ function App() {
     //JSON.parse string into object
 
     fetchUserName();
-  }, []); // runs only once after first render
+  }, [userData]); // runs only once after first render
 
   // localstorage have 4 methods
   // getItem, setItem, removeItem, clear (localstorage.setItem())
